@@ -34,5 +34,5 @@ This app helps users manage tasks efficiently with features like due dates, prio
 3. Start adding your tasks! 🎉
 
 ```bash
-git clone https://github.com/your-username/todo-app.git
+git clone https://github.com/your-username/to_do-app.git
 cd todo-app
