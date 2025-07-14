@@ -91,5 +91,6 @@ function updateProgress() {
   const total = tasks.length;
   const done = tasks.filter(t => t.completed).length;
   progress.textContent = `✅ ${done} of ${total} tasks completed`;
+}
 // Initial load
 renderTasks();
