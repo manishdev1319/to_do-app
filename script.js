@@ -91,20 +91,5 @@ function updateProgress() {
   const total = tasks.length;
   const done = tasks.filter(t => t.completed).length;
   progress.textContent = `✅ ${done} of ${total} tasks completed`;
-}
-
-function toggleTheme() {
-  document.body.classList.toggle("dark");
-  localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
-}
-
-document.getElementById("theme-toggle").addEventListener("change", toggleTheme);
-
-// Load theme on start
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark");
-  document.getElementById("theme-toggle").checked = true;
-}
-
 // Initial load
 renderTasks();
